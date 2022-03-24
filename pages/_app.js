@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import '../styles/globals.css'
-const customLoader = ({src}) => {
-  return src;
-}
+
 function MyApp({ Component, pageProps }) {
   return (
     <div>
@@ -11,7 +9,7 @@ function MyApp({ Component, pageProps }) {
         <div className="max-w-screen-md mx-10 my-2">
           <Link href={'https://cnc.novushierosolymis.ml'}>
             <a>
-              <Image  src="/CNC.svg" 
+              <Image  src={'https://cnc.novushierosolymis.ml/CNC.svg'}
                 className="float-left dark:bg-black" 
                 width={100}
                 height={50}
