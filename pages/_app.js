@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
         <div className="max-w-screen-md mx-10 my-2">
           <Link href={'https://cnc.novushierosolymis.ml'}>
             <a>
-              <Image  src={'https://cnc.novushierosolymis.ml/news/CNC.svg'}
+              <Image  src={'/CNC.svg'}
                 className="float-left dark:bg-black" 
                 width={100}
                 height={50}

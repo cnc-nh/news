@@ -29,12 +29,8 @@ jobs:
         run: npm ci
       - name: Build app 🔨
         run: npm run build
-        env:
-          NEXT_PUBLIC_BASE_PATH: "/news"
       - name: Export the static site 📤
         run: npm run export
-        env:
-          NEXT_PUBLIC_BASE_PATH: "/news"
       - name: Disabling Jekyll 🚫
         run: touch ./out/.nojekyll
 
