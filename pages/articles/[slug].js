@@ -20,9 +20,6 @@ export async function getStaticProps(context) {
     const { params } = context;
     const { data, content } = allPosts.find((item) => item.slug === params.slug)
     const mdxSource = await serialize(content)
-    if (data.socialImage=='') {
-        data.socialImage = '/images/CNCsocialPic.png'
-    };
     return {
         props: {
             ...data,
