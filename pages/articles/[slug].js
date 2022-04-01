@@ -20,6 +20,9 @@ export async function getStaticProps(context) {
     const { params } = context;
     const { data, content } = allPosts.find((item) => item.slug === params.slug)
     const mdxSource = await serialize(content)
+    if (data.socialImage=='') {
+        data.socialImage = '/images/CNCsocialPic.png'
+    };
     return {
         props: {
             ...data,
@@ -27,11 +30,12 @@ export async function getStaticProps(context) {
             content: mdxSource,
             description: data.description,
             slug: params.slug,
+            socialImage: data.socialImage,
         },
     }
 }
 
-export default function ArticlePage({ slug, title, date, description, content }) {
+export default function ArticlePage({ slug, title, date, description, content, socialImage }) {
     return (
         <div className='dark:bg-black'>
         <Head>
@@ -41,7 +45,7 @@ export default function ArticlePage({ slug, title, date, description, content })
             <meta property="og:type" content="article" />
             <meta property='og:description' content={description}/>
             <meta property="og:url" content={`https://cnc-news.novushierosolymis.ml/articles/${slug}`} />
-            <meta property='og:image' content='https://cnc-news.novushierosolymis.ml/CNCsocialPic.png'/>
+            <meta property='og:image' content={`${socialImage}`}/>
             <meta name="theme-color" content="#FFC133" />
             <link rel="icon" href='/CNCfavicon.png' />
         </Head>
