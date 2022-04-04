@@ -27,7 +27,7 @@ export async function getStaticProps(context) {
             content: mdxSource,
             description: data.description,
             slug: params.slug,
-            socialImage: data.socialImage,
+            socialImage: data.socialPic,
         },
     }
 }
