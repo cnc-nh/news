@@ -48,11 +48,7 @@ export default function ArticlePage({ slug, title, date, description, content, s
             </Head>
 
             <main className='flex justify-center items-center'>
-                <div className='divide-y divide-gray-400 max-w-3xl lg:max-w-5xl p-4'>
-                    <div className='p-4'>
-                        <h1 className='text-3xl font-semibold dark:text-white'>{title}</h1>
-                        <p className='text-sm font-light text-gray-500'>{format(parseISO(date), 'MMMM dd, uuu')}</p>
-                    </div>
+                <div className='max-w-3xl lg:max-w-5xl p-4'>
                     <div className='p-8 prose dark:prose-invert max-w-none'><MDXRemote {...content} /></div>
                 </div>
             </main>
