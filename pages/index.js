@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { getAllPosts } from '../lib/data'
 import { format, parseISO } from 'date-fns'
+import Layout from '../components/layout'
 
 export async function getStaticProps() {
     const allPosts = getAllPosts();
@@ -22,25 +23,27 @@ export async function getStaticProps() {
 
 export default function Home({ posts }) {
   return (
-    <div className='max-w-3xl xl:max-w-5xl mx-auto px-10 dark:bg-black'>
-      <Head>
-        <title>CNC News - Home</title>
-        <meta name="description" content="Vigilant, neutral and authoritative news for Novohierosolymians." />
-        <meta property="og:title" content="CNC News - Home" />
-        <meta property="og:type" content="website" />
-        <meta property='og:description' content='Vigilant, neutral and authoritative news for Novohierosolymians.'/>
-        <meta property="og:url" content="https://cnc-news.novushierosolymis.ml" />
-        <meta property='og:image' content='https://cnc-news.novushierosolymis.ml/CNCsocialPic.png'/>
-        <meta name="theme-color" content="#FFC133" />
-        <link rel="icon" href='/CNCfavicon.png' />
-      </Head>
+    <Layout>
+      <div className='max-w-3xl xl:max-w-5xl mx-auto px-10 dark:bg-black'>
+        <Head>
+          <title>CNC News - Home</title>
+          <meta name="description" content="Vigilant, neutral and authoritative news for Novohierosolymians." />
+          <meta property="og:title" content="CNC News - Home" />
+          <meta property="og:type" content="website" />
+          <meta property='og:description' content='Vigilant, neutral and authoritative news for Novohierosolymians.'/>
+          <meta property="og:url" content="https://cnc-news.novushierosolymis.ml" />
+          <meta property='og:image' content='https://cnc-news.novushierosolymis.ml/CNCsocialPic.png'/>
+          <meta name="theme-color" content="#FFC133" />
+          <link rel="icon" href='/CNCfavicon.png' />
+        </Head>
 
-      <ul className='divide-y divide-gray-200 dark:divide-gray-700'>
-        {posts.map((item) => (  
-          <ListArticles key={item.slug} {...item} />  
-        ))}  
-      </ul>  
-    </div>
+        <ul className='divide-y divide-gray-200 dark:divide-gray-700'>
+          {posts.map((item) => (  
+            <ListArticles key={item.slug} {...item} />  
+          ))}  
+        </ul>  
+      </div>
+    </Layout>
   )
 }
 

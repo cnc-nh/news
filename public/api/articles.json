@@ -1,72 +1,102 @@
 [
     {
         "title": "Sander Koff elected first Prime Minister",
-        "date": "2022-04-04T03:46:02.922Z",
+        "date": "2022-04-04T03:46:02Z",
+        "id": 1001,
+        "category": "Government",
+        "isSaved": false,
         "description": "The Rt. Hon. Lord Sander Koff was elected as Prime Minister today by the House of Commons, after the passage of a motion on his self-nomination. The...",
         "socialPic": "https://cnc-news.novushierosolymis.ml/images/sander-koff-2021.jpg",
-        "url": "https://cnc-news.novushierosolymis.ml/2022-04-sander-koff-elected-prime-minister"
+        "url": "https://cnc-news.novushierosolymis.ml/articles/2022-04-sander-koff-elected-prime-minister"
     },
     {
         "title": "April Fools: King abdicates, nation put under military junta",
-        "date": "2022-04-01T14:39:55.351Z",
+        "date": "2022-04-01T14:39:55Z",
+        "id": 1002,
+        "category": "April Fools",
+        "isSaved": false,
         "description": "April 1 is Fools' Day, and Novohierosolymians weren't spared from the day's wrath. At 10:35AM local time (UTC+8), Lord Dhrubajyoti Roy, Marquess of Lalraja announced the abdication...",
         "socialPic": "https://cnc-news.novushierosolymis.ml/images/april-fools-2022.png",
-        "url": "https://cnc-news.novushierosolymis.ml/2022-04-april-fools-in-kingdom"
+        "url": "https://cnc-news.novushierosolymis.ml/articles/2022-04-april-fools-in-kingdom"
     },
     {
         "title": "ANALYSIS: Who are the candidates running for President of the Micronational Community of Australia",
-        "date": "2022-03-30T16:42:34.756Z",
+        "date": "2022-03-30T16:42:34Z",
+        "id": 1003,
+        "category": "Foreign affairs",
+        "isSaved": false,
         "description": "The campaign for President of the Micronational Community of Australia (MCA) has begun, with 3 candidates running to become the successor of Zechariah O'Hair, one of the founders of...",
         "socialPic": "https://cnc-news.novushierosolymis.ml/images/mca-elections-2022.png",
-        "url": "https://cnc-news.novushierosolymis.ml/2022-03-analysis-who-are-candidates-running"
+        "url": "https://cnc-news.novushierosolymis.ml/articles/2022-03-analysis-who-are-candidates-running"
     },
     {
-        "title": "ANALYSIS: Who are the candidates running for President of the Micronational Community of Australia",
-        "date": "2022-03-30T16:42:34.756Z",
-        "description": "The campaign for President of the Micronational Community of Australia (MCA) has begun, with 3 candidates running to become the successor of Zechariah O'Hair, one of the founders of...",
+        "title": "An update on the Kingdom: what happened in the last 2 months",
+        "date": "2022-03-25T03:07:44Z",
+        "id": 1004,
+        "description": "The 2022 Constitution was ratified on 23 February 2022, a month after the Constitutional Committee was convened to assist His Majesty the King in...",
+        "category": "Government",
+        "isSaved": false,
         "socialPic": "https://cnc-news.novushierosolymis.ml/CNCsocialPic.png",
-        "url": "https://cnc-news.novushierosolymis.ml/2022-03-an-update-on-the-kingdom"
+        "url": "https://cnc-news.novushierosolymis.ml/articles/2022-03-an-update-on-the-kingdom"
     },
     {
         "title": "Sophia Albina disgraced from the MicroWiki for Justice movement after scathing accusations",
-        "date": "2022-02-22T03:16:00.000Z",
+        "date": "2022-02-22T03:16:00Z",
+        "id": 1005,
+        "isSaved": false,
         "description": "Sophia Albina, Premier of Nordale and a leader of the MicroWiki for Justice movement was disgraced after strong and scathing accusations were released by former close associate...",
-        "socialPic": "https://cnc-news.novushierosolymis.ml/microwiki-scandal-2022.png",
-        "url": "https://cnc-news.novushierosolymis.ml/2022-02-sophia-albina-disgraced-from-microwiki"
+        "category": "MicroWiki",
+        "socialPic": "https://micronations.wiki/images/en/images/images/8/8b/SophiaAlbina1.png",
+        "url": "https://cnc-news.novushierosolymis.ml/articles/2022-02-sophia-albina-disgraced-from-microwiki"
     },
     {
         "title": "MicroWiki users rise to condemn unbanning of a certain controversial individual",
-        "date": "2022-02-21T16:52:00.000Z",
+        "date": "2022-02-21T16:52:00Z",
+        "id": 1006,
+        "isSaved": false,
+        "category": "MicroWiki",
         "description": "Over the past few days the MicroWiki sector has been rocked by controversy over the unbanning of disgraced micronationalist Zarel 'Zed' Smith, former Prince of New Eiffel. On 29 January 2022, Andrew Creed, head administrator...",
-        "socialPic": "https://cnc-news.novushierosolymis.ml/microwiki-scandal-2022.png",
-        "url": "https://cnc-news.novushierosolymis.ml/2022-02-microwiki-users-rise-to-condemn"
+        "socialPic": "https://cnc-news.novushierosolymis.ml/images/microwiki-scandal-2022.png",
+        "url": "https://cnc-news.novushierosolymis.ml/articles/2022-02-microwiki-users-rise-to-condemn"
     },
     {
-        "title": "A new constitution in the works",
-        "date": "2022-01-25T7:44:00.000Z",
+        "title": "Snyder-Murray wins CA election in a landslide: Valentinus loses for a second time",
+        "date": "2022-01-25T7:44:00Z",
+        "id": 1007,
+        "isSaved": false,
+        "category": "Foreign affairs",
         "description": "CNC News projects that Carson Snyder and James Murray will be the next Chair and Lieutenant Chair of the Cupertino Alliance, after the 1:30AM EST update from the Cupertino Electoral Supervisory Commission...",
-        "socialPic": "https://cnc-news.novushierosolymis.ml/ca-election-jan-2022.png",
-        "url": "https://cnc-news.novushierosolymis.ml/2022-01-snyder-murray-wins-ca-election-in"
+        "socialPic": "https://micronations.wiki/images/en/images/images/thumb/8/83/CupertinoPan.svg/2560px-CupertinoPan.svg.png",
+        "url": "https://cnc-news.novushierosolymis.ml/articles/2022-01-snyder-murray-wins-ca-election-in"
     },
     {
         "title": "A new constitution in the works",
-        "date": "2022-01-25T7:44:00.000Z",
+        "date": "2022-01-25T7:44:00Z",
+        "id": 1008,
+        "isSaved": false,
+        "category": "Government",
         "description": "After a long state of inactivity, a glimmer of hope is found in the Constitutional Committee, which begins its work today, drafting the first Novohierosolymian constitution. The main parts of the Constitution that will...",
-        "socialPic": "https://cnc-news.novushierosolymis.ml/constitution-2022.png",
-        "url": "https://cnc-news.novushierosolymis.ml/2022-01-a-new-constitution-in-works"
+        "socialPic": "https://cnc-news.novushierosolymis.ml/images/constitution-2022.png",
+        "url": "https://cnc-news.novushierosolymis.ml/articles/2022-01-a-new-constitution-in-works"
     },
     {
-        "title": "Lord Gladden retires from inter-micronational community, King Jayden I named Gladden's successor if Lord Gladden abdicates from Oskonian throne",
-        "date": "2021-08-29T03:24:00.000Z",
+        "title": "Lord Gladden retires from inter-micronational community",
+        "date": "2021-08-29T03:24:00Z",
+        "id": 1009,
+        "isSaved": false,
+        "category": "Government",
         "description": "During the Atieran-Galtean-Oskonian political crisis that shook all nations involved in it to the core, a complaint filed by Liam Alexander to the Superior Court of the Cupertino Alliance resulted in Lord Gladden...",
-        "socialPic": "https://cnc-news.novushierosolymis.ml/tucker-gladden-2021.png",
-        "url": "https://cnc-news.novushierosolymis.ml/2021-08-lord-gladden-retires-from-inter"
+        "socialPic": "https://cnc-news.novushierosolymis.ml/images/tucker-gladden-2021.png",
+        "url": "https://cnc-news.novushierosolymis.ml/articles/2021-08-lord-gladden-retires-from-inter"
     },
     {
         "title": "Cupertino Alliance elections causes degradation of Vish-NH relations",
-        "date": "2021-07-21T16:25:00.000Z",
+        "date": "2021-07-21T16:25:00Z",
+        "id": 1010,
+        "isSaved": false,
+        "category": "Foreign affairs",
         "description": "The upcoming Cupertino Alliance chairmanship elections, currently contested by Daniel Hamilton, Grand Duke of Australis and Dhrubajyoti Roy, Rashtradhyaksh of Vishwamitra, caused...",
-        "socialPic": "https://cnc-news.novushierosolymis.ml/ca-election-jul-2021.png",
-        "url": "https://cnc-news.novushierosolymis.ml/2021-07-cupertino-alliance-elections-causes"
+        "socialPic": "https://cnc-news.novushierosolymis.ml/images/ca-election-jul-2021.png",
+        "url": "https://cnc-news.novushierosolymis.ml/articles/2021-07-cupertino-alliance-elections-causes"
     }
 ]
