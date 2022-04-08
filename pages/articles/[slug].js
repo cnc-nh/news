@@ -51,9 +51,14 @@ export default function ArticlePage({ slug, title, date, description, content, s
 
                 <main className='flex justify-center items-center'>
                     <div className='divide-y divide-gray-400 max-w-3xl lg:max-w-5xl p-4'>
-                        <div className='p-4'>
-                            <h1 className='text-3xl font-semibold dark:text-white'>{title}</h1>
-                            <p className='text-sm font-light text-gray-500'>{format(parseISO(date), 'MMMM dd, uuu')}</p>
+                        <div className='p-4 flex justify-between items-center'>
+                            <div className='flex flex-col'>
+                                <h1 className='text-3xl font-semibold dark:text-white'>{title}</h1>
+                                <p className='font-light text-sm text-gray-400'>{format(parseISO(date), 'MMMM dd, uuu')}</p>
+                            </div>
+                            <div>
+                                <a href={`https://cnc-news.novushierosolymis.ml/articles/embed/${slug}`} className='bg-neutral-200 dark:bg-neutral-900 rounded px-5 py-2 text-neutral-500 font-semibold'><i className='bi bi-blockquote-left'></i> <span className='ml-1'>Show only content</span></a>
+                            </div>
                         </div>
                         <div className='p-8 prose dark:prose-invert max-w-none'><MDXRemote {...content} /></div>
                     </div>
