@@ -29,7 +29,7 @@ export default function Layout({ children }) {
                 </div>
                 <div className="bg-gradient-to-tr from-cncRed to-cncGold px-10 py-1">
                     <h1 className="text-white text-4xl font-semibold">
-                        <a href='/'>NEWS</a>
+                        <Link href='/'><a>NEWS</a></Link>
                     </h1>
                 </div>
             </header>
