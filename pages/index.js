@@ -35,6 +35,7 @@ export default function Home({ posts }) {
           <meta property='og:image' content='https://cnc-news.novushierosolymis.ml/CNCsocialPic.png'/>
           <meta name="theme-color" content="#FFC133" />
           <link rel="icon" href='/CNCfavicon.png' />
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
         </Head>
 
         <ul className='divide-y divide-gray-200 dark:divide-gray-700'>
@@ -71,9 +72,12 @@ function ListArticles({ slug, title, date, description }) {
               {description}
             </div>
           </div>
-          <div className="text-base font-medium leading-6">
+          <div className="text-base font-medium leading-6 justify-start space-x-4">
             <Link href={`/articles/${slug}`}>
-                  <a className='text-black hover:text-gray-800 dark:text-gray-500 dark:hover:text-gray-400 transition transition-duration-300' aria-label={`Read "${title}"`}>Read more →</a>
+                  <a className='text-black hover:text-gray-800 dark:text-gray-500 dark:hover:text-gray-400 transition transition-duration-300' aria-label={`Read "${title}"`}>Read more <i className='bi-arrow-up-right-square'></i></a>
+            </Link>
+            <Link href={`/articles/embed/${slug}`}>
+                  <a className='text-black hover:text-gray-800 dark:text-gray-500 dark:hover:text-gray-400 transition transition-duration-300' aria-label={`Embed "${title}"`}>Embed <i className='bi-code-slash'></i></a>
             </Link>
           </div>
         </div>
