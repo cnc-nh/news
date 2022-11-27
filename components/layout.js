@@ -1,11 +1,27 @@
+import autoprefixer from 'autoprefixer';
+import Image from 'next/image'
+
+const customLoader = ({ src }) => {
+    return `/${src}`
+}
+
 export default function Layout({ children }) {
     return (
         <div>
             <header className="flex flex-col dark:bg-black">
                 <div className="max-w-screen-md mx-10 my-4">
                 <a href='https://cnc.novushierosolymis.ml'>
-                    <img src={'/CNC.svg'}
-                        className="float-left dark:bg-black h-12"
+                    <Image
+                    loader={customLoader}
+                    alt=''
+                    src="CNC.svg"
+                    width={143}
+                    height={54}
+                    style={{
+                        width: 'auto',
+                        margin: '0',
+                        padding: '0'
+                        }}
                     />
                 </a>
                 </div>
