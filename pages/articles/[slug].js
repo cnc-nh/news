@@ -4,6 +4,7 @@ import { format, parseISO } from 'date-fns'
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
 import Layout from '../../components/layout'
+import Link from 'next/link'
 
 export async function getStaticPaths() {
     return {
@@ -50,14 +51,15 @@ export default function ArticlePage({ slug, title, date, description, content, s
                 </Head>
 
                 <main className='flex justify-center items-center'>
-                    <div className='divide-y divide-gray-400 max-w-3xl lg:max-w-5xl p-4'>
+                    <div className='divide-y divide-gray-400 max-w-3xl lg:max-w-6xl p-4'>
                         <div className='p-4 flex justify-between items-center'>
                             <div className='flex flex-col'>
                                 <h1 className='text-3xl font-semibold dark:text-white'>{title}</h1>
-                                <p className='font-light text-sm text-gray-400'>{format(parseISO(date), 'MMMM dd, uuu')}</p>
-                            </div>
-                            <div>
-                                <a href={`https://cnc-news.novushierosolymis.ml/articles/embed/${slug}`} className='bg-neutral-200 dark:bg-neutral-900 rounded px-5 py-2 text-neutral-500 font-semibold'><i className='bi bi-blockquote-left'></i> <span className='ml-1'>Show only content</span></a>
+                                <div className='flex flex-row justify-start space-x-2'>
+                                    <p className='font-light text-sm text-gray-400'>{format(parseISO(date), 'MMMM dd, uuu')}</p>
+                                    <i className='font-bold text-sm text-gray-400 bi-dot'></i>
+                                    <Link href={`/articles/embed/${slug}`}><a className='font-light text-sm text-gray-400'>Show content only</a></Link>
+                                </div>
                             </div>
                         </div>
                         <div className='p-8 prose dark:prose-invert max-w-none'><MDXRemote {...content} /></div>
