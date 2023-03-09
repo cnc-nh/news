@@ -9,8 +9,6 @@ export default function Dashboard() {
     const { user, signOut } = useUser()
 
     if (user) {
-        console.log(user)
-
         const name = user.displayName.split(" ");
         return (
             <main className="bg-slate-50 dark:bg-slate-900 dark:text-slate-50 text-slate-900 w-screen h-screen">

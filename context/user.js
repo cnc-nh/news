@@ -18,7 +18,6 @@ const Provider = ({ children }) => {
 
     const signIn = async (email, password) => {
         await signInWithEmailAndPassword(auth, email, password).then((credentials)=>{
-            console.log(credentials.user())
             router.push('/dashboard')
         }).catch(err => {
             toast.error(`The email or password is incorrect.`)
@@ -35,17 +34,14 @@ const Provider = ({ children }) => {
     }
 
     const createAcc = async (name, email, password) => {
-        console.log(name, email, password);
         await createUserWithEmailAndPassword(auth, email, password).then(creds => {
-            console.log(`Successfully logged in user: ${creds.user.uid}`)
             updateProfile(auth.currentUser, {displayName: name, photoURL: ''}).then(()=>{
-                console.log(`Successfully updated user display name: ${name}`)
                 router.push('/dashboard')
             }).catch(err => {
                 toast.error('We encountered an error creating your account. Please try reloading the page then registering again.')
             })
         }).catch(err => {
-            console.error(err)
+            const error = err;
         })
     }
 
