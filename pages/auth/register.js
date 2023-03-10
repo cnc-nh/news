@@ -30,14 +30,14 @@ export default function SignUp() {
                         <h1 className="text-2xl font-semibold text-center">Staff Registration</h1>
                     </div>
                     <form className="flex flex-col gap-8">
-                        <fieldset className="flex flex-col gap-4">
+                        <fieldset className="flex flex-col gap-4 w-full">
                             <fieldset className="flex flex-col gap-1">
                                 <label htmlFor="name">
                                     Full Name <span className="text-red-500">*</span>
                                 </label>
                                 <input  type="name"
                                         id="name"
-                                        className="py-2 px-4 border dark:border-gray-700 rounded-md dark:bg-gray-800"
+                                        className="py-2 px-4 border dark:border-gray-700 rounded-md dark:bg-gray-800 w-full"
                                         value={name}
                                         onChange={e => setName(e.target.value)}
                                         required
@@ -103,10 +103,10 @@ export default function SignUp() {
                                 </div>
                             </fieldset>
                         </fieldset>
-                        <button className="bg-blue-500 p-2 text-white font-bold rounded-md" onClick={(e)=>handleRegister()}>Log in</button>
+                        <button className="bg-blue-500 p-2 text-white font-bold rounded-md" onClick={(e)=>handleRegister()}>Register</button>
                     </form>
                     <p className="text-sm text-gray-500 text-center">
-                        Already have an account? Sign in <Link href="./" className="font-bold underline">here.</Link>
+                        Already have an account? Log in <Link href="./" className="font-bold underline">here.</Link>
                     </p>
                 </div>
                 <p className="hidden text-red-500 dark:text-red-300"></p>

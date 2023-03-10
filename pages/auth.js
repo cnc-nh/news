@@ -6,14 +6,14 @@ import { useRouter } from "next/router";
 
 export default function LogIn() {
 
-    const { user, signIn } = useUser();
+    const { user, logIn } = useUser();
     const router = useRouter()
 
     const [email, setEmail] = useState('')
     const [pass, setPass] = useState('')
 
     function handleSignIn() {
-        signIn(email, pass);
+        logIn(email, pass);
         event.preventDefault();
     }
 
